@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "a0c96113-3113-4818-bf88-40a1c2690ce8",
+		"name": "Reviews-Summariser-206",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29685995"
+	},
+	"item": [
+		{
+			"name": "/product/:productId/reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/:productId/reviews",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":productId",
+						"reviews"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "db956697-1d24-4eeb-954c-1cd3dd674b41"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/:productId/reviews/summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/:productId/reviews",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":productId",
+						"reviews"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "db956697-1d24-4eeb-954c-1cd3dd674b41"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/:productId/reviews/:reviewId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/:productId/reviews/:reviewId",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":productId",
+						"reviews",
+						":reviewId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "db956697-1d24-4eeb-954c-1cd3dd674b43"
+						},
+						{
+							"key": "reviewId",
+							"value": "6757d61acc227a26f37fe62d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/:productId/reviews/:reviewId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/product/:productId/reviews/:reviewId",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":productId",
+						"reviews",
+						":reviewId"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "db956697-1d24-4eeb-954c-1cd3dd674b41"
+						},
+						{
+							"key": "reviewId",
+							"value": "64d3ff2d623d17b39da10fa7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/:productId/reviews",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"This is a review of the product.\",\n    \"image\": [\"image-url-1.jpg\", \"image-url-2.jpg\"],\n    \"comment\": [\n        {\n            \"description\": \"This is a comment on the review.\",\n            \"createdAt\": \"2023-08-07T14:00:00.000Z\",\n            \"updatedAt\": \"2023-08-07T14:00:00.000Z\",\n            \"title\": \"Comment Title\",\n            \"user_id\": \"b3ab61e1-1e87-4c08-bcb6-9f2d8b17d0c9\"\n        }\n    ],\n    \"tags\": [\"tag1\", \"tag2\"],\n    \"score\": 4,\n    \"helpful\": 10,\n    \"product_id\": \"db956697-1d24-4eeb-954c-1cd3dd674b41\",\n    \"is_verified\": true,\n    \"createdAt\": \"2023-08-07T14:00:00.000Z\",\n    \"updatedAt\": \"2023-08-07T14:00:00.000Z\",\n    \"title\": \"Review Title\",\n    \"user_id\": \"8e60a79d-49b2-4e15-92f8-7ad2ed416b01\",\n    \"location\": \"New York, USA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/:productId/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":productId",
+						"reviews"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "db956697-1d24-4eeb-954c-1cd3dd674b41"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/product/:productId/reviews/:reviewId",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"This is a review of the product.\",\n    \"image\": [\"image-url-1.jpg\", \"image-url-2.jpg\"],\n    \"comment\": [\n        {\n            \"description\": \"This is a comment on the review.\",\n            \"createdAt\": \"2023-08-07T14:00:00.000Z\",\n            \"updatedAt\": \"2023-08-07T14:00:00.000Z\",\n            \"title\": \"Comment Title\",\n            \"user_id\": \"b3ab61e1-1e87-4c08-bcb6-9f2d8b17d0c9\"\n        }\n    ],\n    \"tags\": [\"tag1\", \"tag2\"],\n    \"score\": 4,\n    \"helpful\": 10,\n    \"product_id\": \"db956697-1d24-4eeb-954c-1cd3dd674b41\",\n    \"is_verified\": true,\n    \"createdAt\": \"2023-08-07T14:00:00.000Z\",\n    \"updatedAt\": \"2023-08-07T14:00:00.000Z\",\n    \"title\": \"Review Title\",\n    \"user_id\": \"8e60a79d-49b2-4e15-92f8-7ad2ed416b01\",\n    \"location\": \"New York, USA\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/:productId/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						":productId",
+						"reviews"
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "db956697-1d24-4eeb-954c-1cd3dd674b41"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
