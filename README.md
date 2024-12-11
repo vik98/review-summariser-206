@@ -1,3 +1,5 @@
+# Project Type: Implementation
+
 # Installation and Setup Guide
 
 This guide provides detailed instructions for setting up and running the   project with TypeScript. The application is not hosted online due to the lack of free-tier hosting services that support Node.js without additional costs, as Heroku and similar platforms no longer provide free tiers.
