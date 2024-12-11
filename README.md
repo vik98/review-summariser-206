@@ -367,6 +367,8 @@ All in all we have incorporated class concepts such as metadata management, JSON
 
 # Working Screenshots
 
+### Link to Video - [Loom Link](https://www.loom.com/share/34bd979d4ae3479c817b5e20910a0449?sid=6236ba06-ed39-4f5f-bceb-2216b98fded7)
+
 Get all Reviews for a productId - 
 
 ![Get all Reviews for a productId](image-3.png)
